@@ -1,0 +1,14 @@
+<svg width="230" height="80" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="82" width="232" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text transform="matrix(13.0617, 0, 0, 1, -428.191, 0)" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="45.950012" x="35.5" stroke-width="0" stroke="#000" fill="#000000"/>
+  <text transform="matrix(0.890967, 0, 0, 0.915938, 0.136178, -3.18714)" opacity="0.4" font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="46.896674" x="11.464124" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">Inspection Planning</text>
+  <text font-weight="bold" transform="matrix(0.753433, 0, 0, 0.68343, 16.5277, 13.2084)" opacity="0.3" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_4" y="65.928035" x="90.599749" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">and Scheduling</text>
+ </g>
+</svg>

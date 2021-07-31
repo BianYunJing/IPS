@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Login</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="img/icon.ico" type="image/x-icon" />
+	<title>检验排程系统</title>
+	<!-- Fonts and icons -->
+	<script src="js/plugin/webfont/webfont.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/site.js"></script>
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/buttons.css">
+	<script>
+		WebFont.load({
+			google: { "families": ["Open+Sans:300,400,600,700"] },
+			custom: { "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['css/fonts.css'] },
+			active: function () {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/yangtze.min.css">
+</head>
+<body class="login">
+	<div class="wrapper wrapper-login">
+		<div class="container container-login animated fadeIn">
+			<h1 class="text-center">检验排程系统</h1>
+			<h3 class="text-center">Inspection Planning and Scheduling</h3>
+			<div class="login-form">
+				<div class="form-group form-floating-label">
+					<input id="account" name="account" type="text" class="form-control input-border-bottom" required>
+					<label for="account" class="placeholder">账号</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input id="password" name="password" type="password" class="form-control input-border-bottom" required>
+					<label for="password" class="placeholder" v-on:click="makereplyName(data.userName)">密码</label>
+					<div class="show-password">
+						<i class="flaticon-interface"></i>
+					</div>
+				</div>
+				<div class="row form-sub m-0">
+					<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="rememberme">
+						<label class="custom-control-label" for="rememberme">记住我</label>
+					</div>
+
+					<a href="#" class="link float-right">忘记密码 ?</a>
+				</div>
+				<div class="form-action mb-3">
+					<a id="login" class="btn btn-primary btn-rounded btn-login" onclick="login()">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+				</div>
+				<div class="login-account">
+					<span class="msg">还没有账号 ?</span>
+					<a href="#" id="show-signup" class="link">注册</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container container-signup animated fadeIn">
+			<h3 class="text-center">用户注册</h3>
+			<div class="login-form">
+				<div class="form-group form-floating-label">
+					<input id="username" name="username" type="text" class="form-control input-border-bottom" required>
+					<label for="username" class="placeholder">工号</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input id="fullname" name="fullname" type="text" class="form-control input-border-bottom" required>
+					<label for="fullname" class="placeholder">姓名</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input id="email" name="email" type="email" class="form-control input-border-bottom" required>
+					<label for="email" class="placeholder">邮箱</label>
+				</div>
+				<div class="form-group form-floating-label">
+					<input id="passwordsignin" name="passwordsignin" type="password" class="form-control input-border-bottom" required>
+					<label for="passwordsignin" class="placeholder">密码</label>
+					<div class="show-password">
+						<i class="flaticon-interface"></i>
+					</div>
+				</div>
+				<div class="form-group form-floating-label">
+					<input id="confirmpassword" name="confirmpassword" type="password" class="form-control input-border-bottom" required>
+					<label for="confirmpassword" class="placeholder">密码确认</label>
+					<div class="show-password">
+						<i class="flaticon-interface"></i>
+					</div>
+				</div>
+				<div class="form-action">
+					<a href="#" id="show-signin" class="btn btn-danger btn-rounded btn-login mr-3">返&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;回</a>
+					<a href="#" id="register" class="btn btn-primary btn-rounded btn-login" onclick="register()">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/core/jquery.3.2.1.min.js"></script>
+	<script src="js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="js/core/popper.min.js"></script>
+	<script src="js/core/bootstrap.min.js"></script>
+	<script src="js/ready.js"></script>
+</body>
+</html>
